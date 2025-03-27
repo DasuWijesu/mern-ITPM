@@ -1,22 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import './App.css'; // Add your custom styles (if needed)
+import { Button } from '@mui/material'; // Import Material-UI Button component
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Task Analytics Dashboard</h1>
+        <Button variant="contained" color="primary" size="large">
+          Create Report
+        </Button>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Manage your task reports, view performance, and more!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
